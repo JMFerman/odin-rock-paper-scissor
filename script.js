@@ -10,9 +10,9 @@ function getComputerChoice(){
 }
 
 function getHumanChoice() {
-    document.querySelector('#rock').addEventListener('click', () => playGame('rock'));
-    document.querySelector('#paper').addEventListener('click', () => playGame('paper'));
-    document.querySelector('#scissors').addEventListener('click', () => playGame('scissors'));
+    document.querySelector('.rock').addEventListener('click', () => playRound('rock'));
+    document.querySelector('.paper').addEventListener('click', () => playRound('paper'));
+    document.querySelector('.scissors').addEventListener('click', () => playRound('scissors'));
 }
 
 let humanScore = 0;
@@ -20,7 +20,7 @@ let computerScore = 0;
 let gameOver = false;
 
 const result = document.querySelector('.result');
-const humanScoreDisplay = document.querySelector('.human-score');
+const humanScoreDisplay = document.querySelector('.player-score');
 const computerScoreDisplay = document.querySelector('.computer-score');
 const finalResult = document.querySelector('.final-result');
 
