@@ -4,23 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
         <h1>Rock Paper Scissors</h1>
         <div class="game">
-            <div class="choices">
-                <button id="rock" class="choice">Rock</button>
-                <button id="paper" class="choice">Paper</button>
-                <button id="scissors" class="choice">Scissors</button>
+
+            <div class="score">
+                <img src="https://cdn.pixabay.com/photo/2023/05/02/10/35/avatar-7964945_1280.png" alt="User Icon" class="user-icon">
+                <span class="user-name">User</span>
+                <span class="player-score">Player: 0</span>
+                <span class="score-divider">|</span>
+                <span class="computer-score">Computer: 0</span>
+                <img src="https://cdn.pixabay.com/photo/2023/05/02/10/32/avatar-7964941_960_720.png" alt="Computer Icon" class="computer-icon">
             </div>
-            <div class="result">
-                <p id="message"></p>
-                <p>Player Score: <span id="player-score">0</span></p>
-                <p>Computer Score: <span id="computer-score">0</span></p>
+            <div class="button">
+                <button class="btn rock">
+                    <img src="https://images.pexels.com/photos/2363901/pexels-photo-2363901.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Rock">
+                </button>
+                <button class="btn paper">
+                    <img src="https://cdn.pixabay.com/photo/2021/06/29/13/24/paper-6374151_1280.jpg" alt="Paper">
+                </button>
+                <button class="btn scissors">
+                    <img src="https://cdn.pixabay.com/photo/2014/04/10/19/53/scissors-321238_1280.jpg" alt="Scissors">
+                </button>
             </div>
+            <div class="reset">
+                <button onClick="resetGame();" class="reset-btn">Reset</button>
+            </div>
+            <p class="result"></p>
+            <p class="final-result"></p>
         </div>
     </div>
+    </body>
 </html>
